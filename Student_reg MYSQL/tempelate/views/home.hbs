@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{!-- <link rel="stylesheet" href="stylesheet/style.css"> --}}
+    <link rel="stylesheet" href="stylesheet/login.css">
+    {{>links}}
+    <style>
+        .container{
+            position: relative;
+            width: 60%;
+            height: 300px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #00000056;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container h1{
+            font-size: 50px;
+            font-weight: 800;
+        }
+        .nav-parttwo span{
+            width: 80px;
+            font-weight: 700;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    {{>nav1}}
+    <div class="container">
+        <h1>Welcome back {{name}}</h1>
+    </div>
+</body>
+<script>
+    document.getElementsByTagName("button")[0].addEventListener("click",()=>{
+        window.location = "/";
+    })
+</script>
+</html>

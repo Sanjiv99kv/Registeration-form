@@ -1,0 +1,27 @@
+<form action="/submit" method="post">
+        <div class="form_sec">
+            <h4>Registeration form</h4>
+            <div class="name">
+                <input type="text" name="firstname" placeholder="first name">
+                <input type="text" name="lastname" placeholder="last name">
+            </div>
+            <div class="email">
+                <input type="text" name="email" placeholder="Email Id">
+            </div>
+            <div class="email">
+                <input type="text" name="phone" placeholder="Phone no.">
+            </div>
+            <div class="age">
+                <input id="age" type="number" name="age" placeholder="age">
+                <div class="gender">
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="Female">Female
+                </div>
+            </div>
+            <div class="pass">
+                <input type="password" name="pass" placeholder="Password">
+                <input type="password" name="cpass" placeholder="confirm password">
+            </div>
+            <button id="submit" type="submit" name="submit" onclick="check()">Submit</button>
+        </div>
+    </form>
